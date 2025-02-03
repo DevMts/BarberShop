@@ -1,0 +1,198 @@
+.fourSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.fourSection h2 {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: center;
+}
+
+.fourSection>p {
+    font-size: .9rem;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-family: var(--font-work-sans);
+    color: var(--black);
+    text-align: center;
+}
+
+.fourSectionInfos {
+    color: var(--black);
+    width: 40%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.fourSectionInfos h3 {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: center;
+}
+
+.fourSectionInfos>p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: var(--font-work-sans);
+    color: var(--black);
+    text-align: center;
+
+}
+
+.fourSectionInfos .trace {
+    width: 20%;
+    height: 3px;
+    background-color: var(--dark-vanilla);
+    margin: 0 auto;
+}
+
+.fourSectionFeedbacks {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas:
+        'google tripadvisor'
+        'feedback feedback';
+    gap: 1rem;
+}
+
+.fourSectionStars.google {
+    grid-area: google;
+}
+
+.fourSectionStars.tripadvisor {
+    grid-area: tripadvisor;
+}
+
+.fourSectionStarsFeedbackPerson {
+    grid-area: feedback;
+}
+
+.fourSectionStars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.fourSectionStars figure {
+    width: 25%;
+}
+
+.fourSectionStars img {
+    width: 100%;
+}
+
+.fourSectionStars h3 {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: var(--font-barlow);
+    color: var(--black)
+}
+
+.fourSectionStars div,
+.fourSectionStarsFeedbackPerson div {
+    color: #F2C94C;
+    display: flex;
+    gap: 0.3rem;
+    /* font-size: 0.8/rem; */
+}
+
+.quantifyReviews {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: var(--font-work-sans);
+    color: var(--black);
+}
+
+.fourSectionStars .note {
+    font-size: 4rem;
+    display: inline-block;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: left;
+    font-weight: bold;
+}
+
+.fourSectionStarsFeedbackPerson {
+    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+    border: 1px solid var(--dark-vanilla);
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.fourSectionStarsFeedbackPerson figure {
+    position: absolute;
+    width: 20%;
+    max-width: 110px;
+    top: -2rem;
+    left: 40%;
+}
+
+.fourSectionStarsFeedbackPerson img {
+    width: 100%;
+}
+
+.fourSectionStarsFeedbackPerson h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: center;
+}
+
+.fourSectionStarsFeedbackPerson p {
+    font-size: 0.7rem;
+    width: 90%;
+    text-align: center;
+    font-family: var(--font-work-sans);
+    color: var(--black);
+    text-align: center;
+}
+
+.fourSectionStarsFeedbackPerson .nameFeedback {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .fourSectionFeedbacks {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(100px, auto);
+        grid-template-areas:
+            'google feedback feedback tripadvisor' ;
+        gap: 1rem;
+    }
+    #fourSectionArticleInfos{
+        margin-bottom: 8rem;
+    }
+}

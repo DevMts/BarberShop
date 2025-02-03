@@ -1,0 +1,123 @@
+.oneSection,
+.oneSectionArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.oneSectionArticle>h2 {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.oneSectionArticle>p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: var(--font-work-sans);
+    color: var(--black);
+    text-align: center;
+}
+
+.oneSectionInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+.oneSectionInfos div {
+    width: 30%;
+    /* outline:1px solid var(--black); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oneSectionInfosDates {
+    width: 20%;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    text-align: left;
+    color: #121212;
+    text-align: center;
+}
+
+.oneSectionInfosDates span {
+    color: var(--dark-vanilla);
+    font-weight: 900;
+}
+
+.oneSectionInfosDescription {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: left;
+
+}
+
+.oneSectionInfos div:nth-of-type(2) {
+    margin-left: 1rem;
+}
+
+.oneSection figure {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.oneSection img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .oneSection {
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: calc(100vh + 10rem);
+    }
+    .oneSection figure{
+        width: 50%;
+    }
+    .oneSectionArticle{
+        width: 50%;
+        margin: 0 auto;
+        /* outline: 1px solid red; */
+        text-align: left;
+        align-items: baseline !important;
+    }
+    .oneSectionArticle *{
+        text-align: left;
+        margin-left: 0;
+        width: 80%;
+        /* outline: 1px solid red; */
+    }
+    .oneSectionArticle>p, .oneSectionArticle>h2, .oneSectionInfos{
+        width: 80%;
+        text-align: left;
+        margin-left: 0;
+    }
+    .oneSectionInfos{
+        justify-content: flex-start;
+    }
+    
+}

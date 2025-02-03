@@ -1,0 +1,52 @@
+.threeSection {
+    height: 50vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1.25), rgba(0, 0, 0, 0.25)), url('../assets/img/handsome-man-barbershop-shaving-beard\ 2.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.threeSection h2 {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--white);
+    text-align: center;
+    width: 80%;
+}
+.threeSection>a {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: var(--dark-vanilla);
+    color: var(--black);
+    transition: 0.5s;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    font-family: var(--font-barlow);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    max-width: 300px;
+
+}
+
+.threeSection>a:hover {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px var(--white);
+    color: var(--white);
+}
+@media (min-width: 768px) {
+    .threeSection {
+        background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../assets/img/handsome-man-barbershop-shaving-beard\ 2.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}

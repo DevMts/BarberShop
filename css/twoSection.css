@@ -1,0 +1,124 @@
+.twoSection {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.twoSection h2 {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--black);
+    text-align: center;
+}
+
+.twoSection>p {
+    font-size: 1rem;
+    font-family: var(--font-work-sans);
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.twoSection article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 30px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.twoSectionServices {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(1rem, auto);
+    grid-template-areas:
+        "icon service service service"
+        "icon description description description"
+        "icon value value value";
+}
+
+.twoSectionServices>figure {
+    grid-area: icon;
+}
+
+.twoSectionServices>.service {
+    grid-area: service;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--black);
+}
+
+.twoSectionServices>.description {
+    grid-area: description;
+    line-height: 1.5rem;
+    font-family: var(--font-work-sans);
+    color: var(--black);
+}
+
+.twoSectionServices>.value {
+    grid-area: value;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-barlow);
+    color: var(--black);
+}
+
+.twoSectionBtn {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: var(--dark-vanilla);
+    color: var(--black);
+    transition: 0.5s;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    font-family: var(--font-barlow);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 800;
+    max-width: 300px;
+
+}
+
+.twoSectionBtn:hover {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px var(--black);
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .twoSection {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .twoSection>p {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .twoSection article {
+        padding: 3rem;
+        width: 100%;
+        gap: 9rem;
+    }
+
+    .twoSectionServices {
+        width: 100%;
+    }
+
+}

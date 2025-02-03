@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia do Zé</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script defer src="js/header.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <header>
+        <div class="gradient"></div>
+        <h1>O melhor lugar para cuidar do seu estilo</h1>
+        <p>Experimente o conforto de um barbeiro profissional no conforto da sua casa</p>
+        <div class="headerBtn">
+            <a href="" class="headerBtnOne">Agendar um Horário</a>
+            <a href="" class="headerBtnTwo">Ver Serviços</a>
+        </div>
+        <section id="headerSection" class="mySwiper">
+            <article class="swiper-wrapper headerArticle">
+                <div class="headerInfos swiper-slide">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Endereço</h3>
+                    <div class="trace"></div>
+                    <p>Rua das Flores, 123 - Centro, São Paulo - SP</p>
+                </div>
+                <div class="headerInfos swiper-slide">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <div class="trace"></div>
+                    <p>+55 (11) 98765-4321</p>
+                    <p>+55 (11) 91234-5678</p>
+                </div>
+                <div class="headerInfos swiper-slide">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Horário de Funcionamento</h3>
+                    <div class="trace"></div>
+                    <p>Seg – Sáb: 9h – 20h</p>
+                    <p>Dom: 9h – 18h</p>
+                </div>
+            </article>
+        </section>
+    </header>
+    <main>
+        <section class="oneSection">
+            <article class="oneSectionArticle">
+                <h2>Seu barbeiro pessoal no conforto da sua casa</h2>
+                <p>Oferecemos serviços de barbearia de alta qualidade no conforto da sua casa. Nossa equipe é especializada em cortes de cabelo, barba e tratamentos capilares.</p>
+                <div class="oneSectionInfos">
+                    <div>
+                        <p class="oneSectionInfosDates">99<span>%</span></p>
+                        <p class="oneSectionInfosDescription">Satisfação do Cliente</p>
+                    </div>
+                    <div>
+                        <p class="oneSectionInfosDates">10<span>+</span></p>
+                        <p class="oneSectionInfosDescription">Anos de Experiência</p>
+                    </div>
+                </div>
+            </article>
+            <figure><img src="assets/img/thumbnail.png" alt="Barbearia do Zé"></figure>
+        </section>
+        <section class="twoSection">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma variedade de serviços para cuidar do seu cabelo e barba. Confira abaixo nossos principais serviços.</p>
+            <article>
+                <div class="twoSectionServices">
+                    <figure><img src="assets/svg/Adult haircut img.svg" alt="Corte de Cabelo Adulto"></figure>
+                    <p class="service">CORTE DE CABELO ADULTO</p>
+                    <p class="description">Corte de cabelo personalizado para homens, com técnicas modernas e produtos de alta qualidade.</p>
+                    <p class="value">R$ 50,00</p>
+                </div>
+
+                <div class="twoSectionServices">
+                    <figure><img src="assets/svg/Kids haircut img.svg" alt="Corte de Cabelo Infantil"></figure>
+                    <p class="service">CORTE DE CABELO INFANTIL</p>
+                    <p class="description">Corte de cabelo especial para crianças, com atendimento personalizado e ambiente descontraído.</p>
+                    <p class="value">R$ 30,00</p>
+                </div>
+
+                <div class="twoSectionServices">
+                    <figure><img src="assets/svg/Beard trim img.svg" alt="Aparar Barba"></figure>
+                    <p class="service">APARAR BARBA</p>
+                    <p class="description">Aparo e modelagem de barba, com técnicas precisas para um visual impecável.</p>
+                    <p class="value">R$ 40,00</p>
+                </div>
+
+                <div class="twoSectionServices">
+                    <figure><img src="assets/svg/Barbershop.svg" alt="Navalha"></figure>
+                    <p class="service">NAVALHA</p>
+                    <p class="description">Serviço de navalha tradicional, com lâminas afiadas e produtos para hidratação.</p>
+                    <p class="value">R$ 35,00</p>
+                </div>
+
+                <div class="twoSectionServices">
+                    <figure><img src="assets/svg/Scalp moisturizing img.svg" alt="Hidratação Capilar"></figure>
+                    <p class="service">HIDRATAÇÃO CAPILAR</p>
+                    <p class="description">Tratamento capilar para hidratar e revitalizar os fios, deixando-os mais saudáveis.</p>
+                    <p class="value">R$ 25,00</p>
+                </div>
+
+                <div class="twoSectionServices">
+                    <figure><img src="assets/svg/Barbershop-1.svg" alt="Tratamento de Barba"></figure>
+                    <p class="service">TRATAMENTO DE BARBA</p>
+                    <p class="description">Tratamento completo para barba, incluindo hidratação e modelagem.</p>
+                    <p class="value">R$ 60,00</p>
+                </div>
+            </article>
+            <a href="" class="twoSectionBtn">Agendar um Horário</a>
+        </section>
+        <section class="threeSection">
+            <h2>Experimente o luxo de um barbeiro particular na sua casa</h2>
+            <a href="">Agendar um Horário</a>
+        </section>
+        <section class="fourSection">
+            <h2>Por que escolher a Barbearia do Zé?</h2>
+            <p>Nossa equipe é formada por profissionais experientes e qualificados, prontos para oferecer o melhor serviço de barbearia.</p>
+            <article id="fourSectionArticleInfos" class="mySwiper2">
+                <div class="swiper-wrapper fourSectionDiv">
+                    <div class="fourSectionInfos swiper-slide">
+                        <figure><img src="assets/svg/licensed icon.svg" alt=""></figure>
+                        <h3>Profissionais Licenciados</h3>
+                        <div class="trace"></div>
+                        <p>Nossos barbeiros são licenciados e seguem rigorosos padrões de higiene e segurança.</p>
+                    </div>
+                    <div class="fourSectionInfos swiper-slide">
+                        <figure><img src="assets/svg/masters icon.svg" alt=""></figure>
+                        <h3>Mestres no Ofício</h3>
+                        <div class="trace"></div>
+                        <p>Nossa equipe é apaixonada pelo que faz e está sempre atualizada com as últimas tendências.</p>
+                    </div>
+                    <div class="fourSectionInfos swiper-slide">
+                        <figure><img src="assets/svg/trusted icon.svg" alt=""></figure>
+                        <h3>Confiável</h3>
+                        <div class="trace"></div>
+                        <p>Somos altamente recomendados por nossos clientes, com avaliações 5 estrelas em todas as plataformas.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="fourSectionFeedbacks">
+                <div class="fourSectionStars google">
+                    <figure class="icon"><img src="assets/svg/google.svg" alt=""></figure>
+                    <h3>GOOGLE</h3>
+                    <p class="note">4.9</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quantifyReviews">196 Avaliações</p>
+                </div>
+                <div class="fourSectionStars tripadvisor">
+                    <figure class="icon"><img src="assets/svg/tripadvisor-icon.svg" alt=""></figure>
+                    <h3>TRIPADVISOR</h3>
+                    <p class="note">5.0</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quantifyReviews">196 Avaliações</p>
+                </div>
+                <div class="fourSectionStarsFeedbackPerson">
+                    <figure><img src="assets/img/person.png" alt=""></figure>
+                    <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <h3>O MELHOR SERVIÇO DE BARBEARIA</h3>
+                    <p>Serviço impecável, profissionais qualificados e atendimento excepcional. Recomendo a todos!</p>
+                    <p class="nameFeedback">JOÃO SILVA</p>
+                </div>
+            </article>
+        </section>
+        <section class="fiveSection">
+            <h2>Agende um Horário</h2>
+            <p>Entre em contato conosco para agendar um horário ou tirar suas dúvidas.</p>
+            <article>
+                <div>
+                    <figure>
+                        <i class="fa-solid fa-phone"></i>
+                    </figure>
+                    <p>Ligue para nós</p>
+                    <p>(11) 98765-4321</p>
+                </div>
+                <div>
+                    <figure>
+                        <i class="fa-solid fa-envelope"></i>
+                    </figure>
+                    <p>Envie um e-mail</p>
+                    <p>contato@barbeariadoreze.com.br</p>
+                </div>
+            </article>
+            <form action="">
+                <div class="formGroup">
+                    <div>
+                        <label for="">Nome Completo</label>
+                        <input type="text" name="" id="" placeholder=" ">
+                    </div>
+                    <div>
+                        <label for="">Assunto</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Telefone</label>
+                        <input type="number" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">E-mail</label>
+                        <input type="email" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Deixe sua mensagem...</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <a href="">Agendar um Horário</a>
+                </div>
+            </form>
+        </section>
+        <section class="sixSection">
+            <div id="map"></div>
+        </section>
+        <footer>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <p>&copy; Copyright 2023 Barbearia do Zé - Todos os direitos reservados</p>
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/af48f1280d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>
