@@ -1,3 +1,6 @@
+.oneSection{
+    margin-top: 3rem;
+}
 .oneSection,
 .oneSectionArticle {
     display: flex;

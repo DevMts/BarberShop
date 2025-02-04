@@ -28,6 +28,9 @@
     width: 40%;
     margin: 2rem auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .fourSectionInfos h3 {
