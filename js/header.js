@@ -87,6 +87,11 @@ L.marker([-21.1303, -42.3674]).addTo(map)
     .bindPopup('Estamos aqui')
     .openPopup();
 
+    setTimeout(() => {
+        map.invalidateSize();
+      }, 500);
+      
+
 addEventListener('load', () => {
     const main = document.querySelector('main')
     const header = document.querySelector('header')
@@ -97,6 +102,5 @@ addEventListener('load', () => {
     header.classList.remove('off')
     footer.classList.remove('off')
     loader.classList.add('off')
-
 
 })
