@@ -226,6 +226,10 @@
         margin: 0;
     }
 
+    .fiveSection>p {
+        text-align: left;
+    }
+
     .fiveSection form {
         top: 9rem;
         width: 35%;
@@ -250,11 +254,26 @@
 
 @media (min-width: 768px) {
     .fiveSection article div {
-        width: 30%;
+        width: 40%;
+        font-size: 1.5rem;
+    }
+
+    .fiveSection figure {
+        height: 4rem;
+        width: 4rem;
     }
 
     .fiveSection {
         height: calc(var(--vh) * 60);
+
+    }
+
+    .fiveSection article p:first-of-type {
+        font-size:1rem;
+    }
+
+    .fiveSection article div p:last-of-type {
+        font-size: .9rem;
 
     }
 
