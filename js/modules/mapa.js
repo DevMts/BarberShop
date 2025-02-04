@@ -8,7 +8,7 @@ export class NewMap {
     }
 
     init() {
-        this.map = L.map('map').setView([this.latitude, this.longitude], this.zoom);
+        this.map = L.map('map', { zoomControl: false, scrollWheelZoom: true }).setView([this.latitude, this.longitude], this.zoom);
         this.loadMap();
         this.addMarker();
         this.adjustSize();
