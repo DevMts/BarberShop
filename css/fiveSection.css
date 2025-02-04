@@ -244,11 +244,18 @@
 
 @media (max-width: 400px) {
     .fiveSection form {
-        top: 80%;
+        top: 70%;
     }
 
     .fiveSection textarea {
         height: 4rem;
+    }
+
+    /* .fiveSection{
+        height: 60vh;
+    } */
+    .formGroup a {
+        width: 70%;
     }
 }
 
@@ -265,11 +272,10 @@
 
     .fiveSection {
         height: calc(var(--vh) * 60);
-
     }
 
     .fiveSection article p:first-of-type {
-        font-size:1rem;
+        font-size: 1rem;
     }
 
     .fiveSection article div p:last-of-type {

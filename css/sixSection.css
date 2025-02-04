@@ -7,8 +7,3 @@
 #map {
     height: 100%;
 }
-@media (max-width: 400px) {
-    .sixSection{
-        margin-top: 30vh;
-    }
-}
