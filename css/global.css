@@ -41,12 +41,16 @@ a {
     text-decoration: none;
 }
 
+html {
+    overflow-x: hidden;
+
+}
+
 body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     background-color: var(--cultured);
-
 }
 
 main {
@@ -54,6 +58,9 @@ main {
     flex-direction: column;
     gap: 4rem;
 }
-main.off, header.off, footer.off {
+
+main.off,
+header.off,
+footer.off {
     display: none;
 }
