@@ -12,7 +12,6 @@
     color: var(--black);
     text-align: center;
 }
-
 .fourSection>p {
     font-size: .9rem;
     width: 80%;
@@ -154,6 +153,7 @@
 }
 
 .fourSectionStarsFeedbackPerson img {
+    border-radius: 100%;
     width: 100%;
 }
 
