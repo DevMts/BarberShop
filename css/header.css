@@ -46,6 +46,8 @@ header>p {
     font-size: 1.25rem;
     text-align: center;
     font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
     font-family: var(--font-work-sans);
 }
 

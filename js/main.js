@@ -1,6 +1,8 @@
 import { Carrosel } from './modules/carrossel.js';
 import { NewMap } from './modules/mapa.js';
 import { iniciarLoader } from './modules/loader.js';
+import { FormHandler } from './modules/form.js';
+
 
 // Inicializar carrosséis
 const header = new Carrosel(".mySwiper", ".headerInfos");
@@ -17,3 +19,4 @@ localMap.init();
 iniciarLoader();
 console.log('carregou');
 
+const formHandler = new FormHandler('.formGroup input, .formGroup textarea');
