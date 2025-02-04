@@ -1,8 +1,8 @@
 # Barbearia do Zé
 
 # Prévia 👀
-![Texto alternativo](assets/img/préevia.png)
 
+![Texto alternativo](assets/img/préevia.png)
 
 Bem-vindo ao repositório da **Barbearia do Zé**, uma página web fictícia criada para demonstrar serviços de barbearia com design moderno e responsivo. Este projeto foi desenvolvido em HTML, CSS e JavaScript, com integração de bibliotecas como Swiper e Leaflet para melhorar a experiência do usuário.
 
@@ -44,9 +44,15 @@ barbearia-do-ze/
 ├── css/
 │   └── style.css          # Arquivo de estilos CSS
 ├── js/
-│   └── header.js          # Script para funcionalidades do cabeçalho
+│   ├── main.js
+│   └── modules/           # Scripts JavaScript para funcionalidades específicas
+│       ├── formHandler.js # Lógica de manipulação de formulários
+│       ├── map.js         # Lógica do mapa
+│       └── carrossel.js   # Lógica do carrossel
+│
 ├── index.html             # Página principal
-└── README.md              # Este arquivo
+└── README.md              # Informações sobre o projeto
+
 ```
 
 ---
@@ -54,11 +60,13 @@ barbearia-do-ze/
 ## 🖥️ Como Visualizar o Projeto
 
 1. **Clone o repositório**:
+
    ```bash
    git clone https://github.com/DevMts/BarberShop.git
    ```
 
 2. **Navegue até a pasta do projeto**:
+
    ```bash
    cd barbearia-do-ze
    ```
@@ -95,14 +103,7 @@ Contribuições são bem-vindas! Se você quiser melhorar este projeto, siga os 
 4. Push para a branch (`git push origin feature/nova-feature`).
 5. Abra um Pull Request.
 
-
 Feito com ❤️ por [Mateus](https://github.com/DevMts).  
 ✨ **Barbearia do Zé** - O melhor lugar para cuidar do seu estilo! ✨
+
 ```
-
-### Como usar:
-1. Crie um arquivo chamado `README.md` na raiz do seu projeto.
-2. Copie e cole o conteúdo acima no arquivo.
-3. Substitua as informações genéricas (como `seu-usuario` e `Seu Nome`) pelos dados reais do seu projeto.
-
-Esse `README.md` está pronto para ser usado no GitHub ou em qualquer outra plataforma que suporte Markdown! 😊
