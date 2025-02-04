@@ -1,5 +1,9 @@
 # Barbearia do Zé
 
+# Prévia 👀
+![Texto alternativo](assets/img/préevia.png)
+
+
 Bem-vindo ao repositório da **Barbearia do Zé**, uma página web fictícia criada para demonstrar serviços de barbearia com design moderno e responsivo. Este projeto foi desenvolvido em HTML, CSS e JavaScript, com integração de bibliotecas como Swiper e Leaflet para melhorar a experiência do usuário.
 
 ---
@@ -51,7 +55,7 @@ barbearia-do-ze/
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/barbearia-do-ze.git
+   git clone https://github.com/DevMts/BarberShop.git
    ```
 
 2. **Navegue até a pasta do projeto**:
@@ -91,18 +95,8 @@ Contribuições são bem-vindas! Se você quiser melhorar este projeto, siga os 
 4. Push para a branch (`git push origin feature/nova-feature`).
 5. Abra um Pull Request.
 
----
 
-## 📧 Contato
-
-Se você tiver alguma dúvida ou sugestão, entre em contato:
-
-- **E-mail**: contato@barbeariadoreze.com.br
-- **Redes Sociais**: [Facebook](#) | [Instagram](#) | [Twitter](#)
-
----
-
-Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario).  
+Feito com ❤️ por [Mateus](https://github.com/DevMts).  
 ✨ **Barbearia do Zé** - O melhor lugar para cuidar do seu estilo! ✨
 ```
 
