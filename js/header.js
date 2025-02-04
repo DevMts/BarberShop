@@ -79,10 +79,24 @@ const map = L.map('map').setView([-21.1303, -42.3674], 15);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-  
+}).addTo(map);
+
 
 // Adicionar um marcador
 L.marker([-21.1303, -42.3674]).addTo(map)
     .bindPopup('Estamos aqui')
     .openPopup();
+
+addEventListener('load', () => {
+    const main = document.querySelector('main')
+    const header = document.querySelector('header')
+    const footer = document.querySelector('footer')
+    const loader = document.querySelector('.loader')
+
+    main.classList.remove('off')
+    header.classList.remove('off')
+    footer.classList.remove('off')
+    loader.classList.add('off')
+
+
+})

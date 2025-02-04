@@ -58,3 +58,6 @@ main {
     flex-direction: column;
     gap: 4rem;
 }
+main.off, header.off, footer.off {
+    display: none;
+}
